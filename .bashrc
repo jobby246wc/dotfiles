@@ -128,18 +128,18 @@ alias killswarm="pkill -f swarm"
 
 # Swarm tactic API workspace
 alias tactic='souce ~/swarm_simulator_tacticapi/swarm_simulator/devel/setup.bash'
-alias tactic_ck='export ck_dir=`pwd`;  cd /home/ubuntu/swarm_simulator_tacticapi/swarm_simulator; catkin_make; cd $ck_dir'
+alias tactic_ck='export ck_dir=`pwd`;  cd /home/$USER/swarm_simulator_tacticapi/swarm_simulator; catkin_make; cd $ck_dir'
 
 # Swarm primitives workspace 
 source ~/swarm-primitives-weilun/swarm_simulator/devel/setup.bash
-export SWARM_WS=/home/ubuntu/swarm-primitives-weilun
-alias swarm_ck='export ck_dir=`pwd`;  cd /home/ubuntu/swarm-primitives-weilun/swarm_simulator; catkin_make; cd $ck_dir'
-alias swarm_run='export ck_dir=`pwd`;  cd /home/ubuntu/swarm-primitives-weilun/scripts; ./run.sh; cd $ck_dir'
+export SWARM_WS=/home/$USER/swarm-primitives-weilun
+alias swarm_ck='export ck_dir=`pwd`;  cd /home/$USER/swarm-primitives-weilun/swarm_simulator; catkin_make; cd $ck_dir'
+alias swarm_run='export ck_dir=`pwd`;  cd /home/$USER/swarm-primitives-weilun/scripts; ./run.sh; cd $ck_dir'
 
 # General ros catkin workspace
 alias catkin='source ~/catkin_ws/devel/setup.bash'
-source /home/ubuntu/catkin_ws/devel/setup.bash
-alias cat_ck='export ck_dir=`pwd`;  cd /home/ubuntu/catkin_ws; catkin_make; cd $ck_dir'
+source /home/$USER/catkin_ws/devel/setup.bash
+alias cat_ck='export ck_dir=`pwd`;  cd /home/$USER/catkin_ws; catkin_make; cd $ck_dir'
 
 
 # git branch display in prompt
