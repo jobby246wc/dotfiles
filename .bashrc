@@ -131,10 +131,10 @@ alias tactic='souce ~/swarm_simulator_tacticapi/swarm_simulator/devel/setup.bash
 alias tactic_ck='export ck_dir=`pwd`;  cd /home/$USER/swarm_simulator_tacticapi/swarm_simulator; catkin_make; cd $ck_dir'
 
 # Swarm primitives workspace 
-source ~/swarm-primitives-weilun/swarm_simulator/devel/setup.bash
-export SWARM_WS=/home/$USER/swarm-primitives-weilun
-alias swarm_ck='export ck_dir=`pwd`;  cd /home/$USER/swarm-primitives-weilun/swarm_simulator; catkin_make; cd $ck_dir'
-alias swarm_run='export ck_dir=`pwd`;  cd /home/$USER/swarm-primitives-weilun/scripts; ./run.sh; cd $ck_dir'
+
+export SWARM_WS=/home/$USER/swarm-primitives
+alias swarm_ck='export ck_dir=`pwd`;  cd /home/$USER/swarm-primitives/swarm_simulator; catkin_make; cd $ck_dir'
+alias swarm_run='export ck_dir=`pwd`;  cd /home/$USER/swarm-primitives/scripts; ./run.sh; cd $ck_dir'
 
 # General ros catkin workspace
 alias catkin='source ~/catkin_ws/devel/setup.bash'
@@ -156,3 +156,4 @@ BLUE="\[\033[01;34m\]"
 PS1="$GREEN\u@\h$NO_COLOR:$BLUE\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 
+source /home/$USER/swarm-primitives/swarm_simulator/devel/setup.bash
